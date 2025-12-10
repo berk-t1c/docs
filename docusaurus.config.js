@@ -50,6 +50,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          routeBasePath: '/', // Serve docs at the root of the baseUrl
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           
