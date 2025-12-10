@@ -113,11 +113,11 @@ const config = {
             items: [
               {
                 label: 'Introduction',
-                to: '/docs/intro',
+                to: '/intro',
               },
               {
                 label: 'SpikeYoloV8-Tracker',
-                to: '/docs/spikeyolo-v8-tracker/introduction',
+                to: '/spikeyolo-v8-tracker/introduction',
               },
             ],
           },
