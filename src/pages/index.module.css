@@ -1,0 +1,179 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.heroStats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.statItem {
+  text-align: center;
+}
+
+.statValue {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 996px) {
+  .heroStats {
+    gap: 1rem;
+  }
+  
+  .statValue {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+.performanceSection {
+  padding: 4rem 0;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.performanceChart {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.performanceBar {
+  margin-bottom: 1.5rem;
+}
+
+.performanceLabel {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.performanceBarContainer {
+  background: var(--ifm-color-emphasis-200);
+  border-radius: 4px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.performanceBarFill {
+  background: linear-gradient(90deg, var(--ifm-color-primary), var(--ifm-color-primary-dark));
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 1rem;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.performanceValue {
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.applicationsSection {
+  padding: 4rem 0;
+}
+
+.applicationCard {
+  background: var(--ifm-color-emphasis-50);
+  padding: 2rem;
+  border-radius: 8px;
+  height: 100%;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.applicationList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.applicationList li {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.applicationList li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.applicationDesc {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--ifm-color-content-secondary);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.advantageSection {
+  padding: 4rem 0;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.advantageExample {
+  margin: 2rem 0;
+}
+
+.comparisonCard {
+  background: var(--ifm-background-color);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  text-align: center;
+  height: 100%;
+}
+
+.comparisonCard h3 {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+  
+  .performanceSection,
+  .applicationsSection,
+  .advantageSection {
+    padding: 2rem 0;
+  }
+  
+  .applicationCard {
+    margin-bottom: 2rem;
+  }
+}
