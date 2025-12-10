@@ -26,16 +26,39 @@ This command generates static content into the `build` directory and can be serv
 
 ## Deployment
 
+### Automatic Deployment (Recommended)
+
+The site is automatically deployed to GitHub Pages using GitHub Actions when you push to the `main` or `master` branch. The workflow will:
+1. Build the Docusaurus site
+2. Deploy to the `gh-pages` branch
+3. GitHub Pages will serve the site from the `gh-pages` branch
+
+**Important**: Make sure GitHub Pages is configured in your repository settings:
+- Go to Settings → Pages
+- Source: Deploy from a branch
+- Branch: `gh-pages` / `root`
+
+### Manual Deployment
+
 Using SSH:
 
 ```bash
-USE_SSH=true yarn deploy
+USE_SSH=true npm run deploy
 ```
 
 Not using SSH:
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
+GIT_USER=type1compute npm run deploy
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+### Configuration Notes
+
+- **Repository**: `type1compute/docs`
+- **Base URL**: `/docs/` (configured in `docusaurus.config.js`)
+- **GitHub Pages URL**: `https://type1compute.github.io/docs/`
+
+If your repository name is different, update the `baseUrl` in `docusaurus.config.js`:
+- Repository `type1compute/docs` → `baseUrl: '/docs/'`
+- Repository `type1compute/pages` → `baseUrl: '/pages/'`
+- User/organization site → `baseUrl: '/'`
