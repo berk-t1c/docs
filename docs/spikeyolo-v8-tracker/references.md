@@ -10,17 +10,6 @@ sidebar_position: 10
 
 **Title**: "Integer-Valued Training and Spike-Driven Inference Spiking Neural Network for High-performance and Energy-efficient Object Detection"
 
-**Authors**: 
-- Xinhao Luo
-- Man Yao
-- Yuhong Chou
-- Bo Xu
-- Guoqi Li
-
-**Institution**: BICLab, Institute of Automation, Chinese Academy of Sciences
-
-**Conference**: ECCV 2024
-
 ### Key Contributions
 
 - Integer-valued training for spiking neural networks
@@ -93,19 +82,6 @@ YOLO (You Only Look Once) architecture adapted for:
 - Spiking neural network processing
 - Real-time object detection
 - Multi-class detection
-
-## Citation
-
-If you use this codebase in your research, please cite:
-
-```bibtex
-@article{spikeyolo2024,
-  title={Integer-Valued Training and Spike-Driven Inference Spiking Neural Network for High-performance and Energy-efficient Object Detection},
-  author={Luo, Xinhao and Yao, Man and Chou, Yuhong and Xu, Bo and Li, Guoqi},
-  journal={ECCV},
-  year={2024}
-}
-```
 
 ## Additional Resources
 
