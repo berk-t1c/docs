@@ -5,6 +5,8 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -13,6 +15,12 @@ const config = {
   title: 'Type 1 Compute',
   tagline: 'Brain-inspired processors for edge AI',
   favicon: 'img/T1C.svg',
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css',
+      type: 'text/css',
+    },
+  ],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -51,6 +59,8 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: '/', // Serve docs at the root of the baseUrl
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           
